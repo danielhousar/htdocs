@@ -1,7 +1,7 @@
 <?php
 switch ($lng) {
 case "en":
-	echo "<header>Contacts</header>";
+	echo "<header> &nbsp; Contacts</header>";
 	echo "<p>";
 	echo "Facebook: <a href=\"http://www.facebook.com/daniel.housar\">www.facebook.com/daniel.housar</a>";
 	echo "</p><p>";
@@ -11,7 +11,7 @@ case "en":
 	echo "</p>";
 	break;
 default:
-	echo "<header>Kontakty</header>";
+	echo "<header> &nbsp; Kontakty</header>";
 	echo "<p>";
 	echo "Facebook: <a href=\"http://www.facebook.com/daniel.housar\" target=\"new\">www.facebook.com/daniel.housar</a>";
 	echo "</p><p>";

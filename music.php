@@ -1,4 +1,4 @@
-<header>Music</header>
+<header> &nbsp; Music</header>
 <p>
 <?php
 	switch ($lng) {

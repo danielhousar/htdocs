@@ -20,14 +20,15 @@ $hostname = gethostname();
 		<title><?php echo ("$hostname "); ?>homepage</title>
 		<style><!--
 			#page { margin-left: auto; margin-right: auto; width: 95%; height: 100%; }
-			header { text-align: center; background-color: #9DBFF2; font-weight: bold; }
+			header { background-color: #9DBFF2; font-weight: bold; }
+			#main-header { text-align: center; }
 			aside {
 				width: 220px; position: absolute;
 				color: #000000; background-color: #BFBFBF;
 				text-align: center;
 				}
 			#content { margin-left: 256px; height: 720px; }
-			footer { text-align: center; background-color: #BFBFBF; }
+			footer { text-align: center; }
 			a:link { color: #000000; text-decoration: none; }
 			a:visited { color: #000000; text-decoration: none; }
 			a:hover { font-weight: bold; }
@@ -38,10 +39,12 @@ $hostname = gethostname();
 		--></style>
 	</head>
 	<body><div id="page">
-		<header>
-			Homepage of <?php echo ("$hostname"); ?>
+		<header id="main-header">
+<?php
+	echo ("Homepage of $hostname");
+?>
+			<hr>
 		</header>
-
 		<aside>
 			<nav>
 				<b>Menu</b>
@@ -69,8 +72,8 @@ default:
 switch ($lng) {
 case "en":
 	echo "Languages";
-	echo "<li><a href=\"?s=$s&l=en\">english</a></li>";
 	echo "<li><a href=\"?s=$s&l=cs\">česky</a></li>";
+	echo "<li><a href=\"?s=$s&l=en\">english</a></li>";
 	break;
 default:
 	echo "Jazyky";
@@ -90,25 +93,20 @@ default:
 			</article>
 			<section>
 <?php
-	if ($s) {
-		switch ($s) {
-			case "main":
-				include("main.php");
-				break;
-			case "music":
-				include("music.php");
-				break;
-			case "downloads":
-				include("downloads.php");
-				break;
-			case "contacts":
-				include("contacts.php");
-				break;
-			default:
-				include("main.php");
-		}
-	}
-	else {
+	switch ($s) {
+	case "main":
+		include("main.php");
+		break;
+	case "music":
+		include("music.php");
+		break;
+	case "downloads":
+		include("downloads.php");
+		break;
+	case "contacts":
+		include("contacts.php");
+		break;
+	default:
 		include("main.php");
 	}
 ?>
@@ -116,7 +114,8 @@ default:
 		</div>
 
 		<footer>
-			Daniel Housar 2011 -
+			<hr>
+			Daniel Housar - danielhousar@gmail.com |
 			<?php
 				echo php_uname('n');
 				echo " - ";
@@ -125,9 +124,9 @@ default:
 				echo php_uname('r');
 				echo " ";
 				echo php_uname('m');
-				echo " ";
-			?> -
-			danielhousar@gmail.com
+				echo " | ";
+			?>
+			last updated: 2011-09-03 14:24
 		</footer>
 	</div></body>
 </html>
