@@ -26,9 +26,12 @@
 		<p>Možná se ptáte, proč tyto stránky vypadají tak stroze a jednoduše,
 		když mají využívat nejmodernějších webových a internetových technologií.
 		Je tomu tak proto, že mám rád minimalismus, úsporu elektrické energie, úsporu přenosu dat
-		atd. Tyto stránky by měly zaujmout obsahem, ne vzhledem. Vzhled patří do marketingu
+		atd. Tyto stránky by měly zaujmout obsahem, ne vzhledem - vzhled patří do marketingu
 		a z mého pohledu není marketing nic jiného než zneužívání
-		lidských vlastností, které mají ulehčit sblížení lidí.</p>";
+		lidských vlastností, které mají ulehčit sblížení lidí.
+		Pokud chcete vidět něco, co se vám líbí, tak se nenechte oblbnout reklamou
+		a raději se podívejte na tvář někoho blízkého, zajděte si do přírody
+		nebo navštivte nějakou obrazovou galerii :-)</p>";
 	}
 ?>
 
