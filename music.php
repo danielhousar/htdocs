@@ -1,27 +1,26 @@
 <header> &nbsp; Media</header>
-<p>
 <?php
 	switch ($lng) {
 	case "en":
-		echo "This section is dedicated to testing of HTML5 medial player.";
+		echo "<p>This section is dedicated to testing of HTML5 medial player.</p>";
 		break;
 	default:
-		echo "Tato sekce je určena pro test HTML5 přehrávače médií.";
+		echo "<p>Tato sekce je určena pro test HTML5 přehrávače médií.</p>";
 	}
 ?>
-</p>
 <p>
-
-	Music
+	Music<br>
 	<audio controls>
 		<!--<source src="./music/attero_dominatus.mp3" type="audio/mpeg">-->
 		<!--<source src="./music/attero_dominatus.ogg" type="audio/ogg">-->
 	</audio>
-
-	Video
+</p>
+<p>
+	Video: HaTikvah<br>
 	<video controls>
-		<source src="./music/hatikvah.mp4" type="video/mpeg">
-	</video>
+		<source src="./music/hatikvah.webm" type="video/webm">
+	</video><br>
+	<code>format: WebM (matrjoska), video codec: vp8 (vpx), audio codec: OGG (vorbis)</code>
 
 </p>
 <?php

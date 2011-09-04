@@ -54,7 +54,7 @@ switch ($lng) {
 case "en":
 	echo "Sections";
 	echo "<li id=\"main\"><a href=\"?s=main&l=$lng\">Main page</a></li>";
-	echo "<li id=\"music\"><a href=\"?s=music&l=$lng\">Music</a></li>";
+	echo "<li id=\"music\"><a href=\"?s=music&l=$lng\">Media</a></li>";
 	echo "<li id=\"downloads\"><a href=\"?s=downloads&l=$lng\">Downloads</a></li>";
 	echo "<li id=\"contacts\"><a href=\"?s=contacts&l=$lng\">Contacts</a></li>";
 	break;
@@ -126,7 +126,7 @@ default:
 				echo php_uname('m');
 				echo " | ";
 			?>
-			last updated: 2011-09-03 14:24
+			last updated: 2011-09-03 15:24
 		</footer>
 	</div></body>
 </html>
