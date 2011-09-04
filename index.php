@@ -54,14 +54,14 @@ switch ($lng) {
 case "en":
 	echo "Sections";
 	echo "<li id=\"main\"><a href=\"?s=main&l=$lng\">Main page</a></li>";
-	echo "<li id=\"music\"><a href=\"?s=music&l=$lng\">Media</a></li>";
+	echo "<li id=\"music\"><a href=\"?s=media&l=$lng\">Media</a></li>";
 	echo "<li id=\"downloads\"><a href=\"?s=downloads&l=$lng\">Downloads</a></li>";
 	echo "<li id=\"contacts\"><a href=\"?s=contacts&l=$lng\">Contacts</a></li>";
 	break;
 default:
 	echo "Sekce";
 	echo "<li id=\"main\"><a href=\"?s=main&l=$lng\">Hlavní stránka</a></li>";
-	echo "<li id=\"music\"><a href=\"?s=music&l=$lng\">Media</a></li>";
+	echo "<li id=\"music\"><a href=\"?s=media&l=$lng\">Media</a></li>";
 	echo "<li id=\"downloads\"><a href=\"?s=downloads&l=$lng\">Ke stažení</a></li>";
 	echo "<li id=\"contacts\"><a href=\"?s=contacts&l=$lng\">Kontakty</a></li>";
 }
@@ -97,8 +97,8 @@ default:
 	case "main":
 		include("main.php");
 		break;
-	case "music":
-		include("music.php");
+	case "media":
+		include("media.php");
 		break;
 	case "downloads":
 		include("downloads.php");
