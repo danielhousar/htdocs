@@ -126,7 +126,7 @@ default:
 				echo php_uname('m');
 				echo " | ";
 			?>
-			last updated: 2011-09-03 15:24
+			last updated: 2011-09-04 12:30
 		</footer>
 	</div></body>
 </html>
